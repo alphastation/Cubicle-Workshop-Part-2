@@ -1,0 +1,50 @@
+{
+  "idbcbadf0ec26ba": {
+    "name": "test2",
+    "description": "opisanie2",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3tFV_pB-_9IWqDgoYgkjJuHXlsDlAogquw&usqp=CAU",
+    "difficulty": 2
+  },
+  "9alu11owkplfw56x": {
+    "name": "RubikOffice",
+    "description": "nice and fun",
+    "imageUrl": "https://cdn1.vectorstock.com/i/1000x1000/48/15/rubik-office-cubicle-vector-134815.jpg",
+    "difficulty": 4
+  },
+  "9alu9hokplgppvi": {
+    "name": "cube3",
+    "description": "description3",
+    "imageUrl": "https://previews.agefotostock.com/previewimage/medibigoff/1a4d32017edcdb920bba46a9bb957f11/iko-11470079.jpg",
+    "difficulty": 3
+  },
+  "9alutpkkplh1bpo": {
+    "name": "Pyraminx",
+    "description": "none",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61izOzq%2BBAL._SY355_.jpg",
+    "difficulty": 1
+  },
+  "9alu16l8kplh2p4o": {
+    "name": "Eco-Dark",
+    "description": "none",
+    "imageUrl": "https://thingsidesire.com/wp-content/uploads/2018/06/Eco-Dark-Rubik%E2%80%99s-Cube2.jpg",
+    "difficulty": 6
+  },
+  "9alutcgkplh8bxr": {
+    "name": "Gan356 Air SM",
+    "description": "none",
+    "imageUrl": "https://ae01.alicdn.com/kf/HTB1CSddXRxRMKJjy0Fdq6yifFXa6/Gan-356-Air-SM-3x3-Black-Magic-cube-GAN-Air-SM-Magnetic-3x3x3-Speed-cube-gans.jpg",
+    "difficulty": 3
+  },
+  "9aluv50kplh9c5k": {
+    "name": "Megaminx",
+    "description": "none",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61HpQqVQ37L._SY355_.jpg",
+    "difficulty": 5
+  },
+  "9alu8z4kpln9j8f": {
+    "name": "Coin in cube",
+    "description": "zlatna",
+    "imageUrl": "https://static.vecteezy.com/system/resources/previews/001/991/111/non_2x/alphabet-wooden-cube-letters-coin-on-gold-coins-free-photo.jpg",
+    "difficulty": 1
+  }
+}
