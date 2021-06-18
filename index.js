@@ -4,41 +4,39 @@
 //TODO: Setup the storage middleware
 //TODO: Setup route handlers/controllers actions
 const express = require('express');
+const expressConfig = require('./config/express');
+const databaseConfig = require('./config/database');
+const routesConfig = require('./config/routes');
+const { init: storage } = require('./services/storage')
 
-const hbs = require('express-handlebars');
-const { init: storage } = require('./models/storage')
-const {about} = require('./controllers/about');
-const { catalog }= require('./controllers/catalog');
-const { getCreate, postCreate } = require('./controllers/create');
-const {details} = require('./controllers/details');
-const {notFound} = require('./controllers/notFound');
 start();
  async function start() {
      const app = express();
      const port = 3000;
+     expressConfig(app);
+      await databaseConfig(app);
+     app.use(await storage());//promyana pozicia
+     routesConfig(app);
+     
 
-     app.engine('hbs', hbs({
-         // partialsDir: './views',
-         extname: '.hbs',
-         defaultLayout: 'main'
-     }));
-     app.set('view engine', 'hbs');
 
-     app.use('/static', express.static('static'));
-     app.use(express.urlencoded({
-        extended: false
-    }));
-     app.use(await storage());
-
-     app.get('/', catalog);
-     app.get('/about', about);
-     app.get('/details/:id', details);
-     app.get('/notFound', notFound);
-     app.get('/create', getCreate);
-     app.post('/create', postCreate);
-
-     app.all('*', notFound)
      app.listen(port, console.log(`Listening on port ${port}! Now its up to you...`));
  }
 
-
+//  Module {
+//     id: '.',
+//     path: '/Users/stanleynguyen/Documents/Projects/blog.stanleynguyen.me',
+//     exports: {},
+//     parent: null,
+//     filename: '/Users/stanleynguyen/Documents/Projects/blog.stanleynguyen.me/index.js',
+//     loaded: false,
+//     children: [],
+//     paths: [
+//       '/Users/stanleynguyen/Documents/Projects/blog.stanleynguyen.me/node_modules',
+//       '/Users/stanleynguyen/Documents/Projects/node_modules',
+//       '/Users/stanleynguyen/Documents/node_modules',
+//       '/Users/stanleynguyen/node_modules',
+//       '/Users/node_modules',
+//       '/node_modules'
+//     ]
+//   }
